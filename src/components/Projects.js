@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import { projectData } from "../data/projectData";
 import ProjectCard from "./ProjectCard";
 import stars from "../assets/mult-stars.png";

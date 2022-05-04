@@ -40,10 +40,10 @@ const ProjectCard = ({
           sourceLink.map((el, idx) => {
             var linksource = "Source";
             if (sourceLink.length > 1) {
-              if (idx == 0) {
+              if (idx === 0) {
                 linksource = "Frontend Source";
               }
-              if (idx == 1) {
+              if (idx === 1) {
                 linksource = "Backend Source";
               }
             }
