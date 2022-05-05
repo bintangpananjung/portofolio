@@ -33,6 +33,7 @@ export const projectData = [
   {
     title: "Simple Chat Web Based App",
     job: "Personal Project",
+    visitLink: "//web-based-chat-app.netlify.app/",
     sourceLink: ["//github.com/bintangpananjung/simple-chat-app"],
     imgSource: simplechat,
     desc: "Simple chat app is a messaging app adapted from LINE messaging app operated on website platform. Just like LINE messaging app, user has credential such as name and status. User also can add friends by username or id.",

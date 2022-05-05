@@ -9,6 +9,7 @@ const ProjectCard = ({
   title,
   job,
   sourceLink,
+  visitLink,
 }) => {
   return (
     <div
@@ -36,30 +37,44 @@ const ProjectCard = ({
             );
           })}
         </div>
-        {sourceLink ? (
-          sourceLink.map((el, idx) => {
-            var linksource = "Source";
-            if (sourceLink.length > 1) {
-              if (idx === 0) {
-                linksource = "Frontend Source";
+        <div className="flex w-full justify-around">
+          {visitLink ? (
+            <Link
+              to={visitLink}
+              className=" self-center bg-[#a162e8] rounded-md hover:bg-[#edca85] px-4 py-2 transition-all duration-150 mb-2"
+            >
+              Visit
+            </Link>
+          ) : (
+            ""
+          )}
+          {sourceLink ? (
+            sourceLink.map((el, idx) => {
+              var linksource = "Source";
+              if (sourceLink.length > 1) {
+                if (idx === 0) {
+                  linksource = "Frontend Source";
+                }
+                if (idx === 1) {
+                  linksource = "Backend Source";
+                }
               }
-              if (idx === 1) {
-                linksource = "Backend Source";
-              }
-            }
-            return (
-              <Link
-                key={idx}
-                to={el}
-                className=" self-center bg-[#a162e8] rounded-md hover:bg-[#edca85] px-4 py-2 transition-all duration-150 mb-2"
-              >
-                {linksource}
-              </Link>
-            );
-          })
-        ) : (
-          <p className="self-center italic text-red-500 py-2">Private Source</p>
-        )}
+              return (
+                <Link
+                  key={idx}
+                  to={el}
+                  className=" self-center bg-[#a162e8] rounded-md hover:bg-[#edca85] px-4 py-2 transition-all duration-150 mb-2"
+                >
+                  {linksource}
+                </Link>
+              );
+            })
+          ) : (
+            <p className="self-center italic text-red-500 py-2">
+              Private Source
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

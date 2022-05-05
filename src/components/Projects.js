@@ -28,6 +28,7 @@ const Projects = ({ ref }) => {
             imgSource={el.imgSource}
             tags={el.tags}
             sourceLink={el.sourceLink}
+            visitLink={el.visitLink}
             key={idx}
           />
         );
