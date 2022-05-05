@@ -13,7 +13,15 @@ const Footer = () => {
         </div>
         <div className="flex items-end">
           <FontAwesomeIcon icon={faEnvelope} className="h-6 text-white" />
-          <p className="ml-4">pananjungbintang@gmail.com</p>
+          <p
+            className="ml-4"
+            onClick={e => {
+              window.location.href = "mailto:pananjungbintang@gmail.com";
+              e.preventDefault();
+            }}
+          >
+            pananjungbintang@gmail.com
+          </p>
         </div>
       </div>
     </div>
