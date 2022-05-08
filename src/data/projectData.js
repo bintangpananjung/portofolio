@@ -25,7 +25,7 @@ export const projectData = [
     title: "VaksinKuy",
     job: "Personal Project",
     sourceLink: ["//github.com/bintangpananjung/Web-VaksinKuy"],
-    visitLink: "http://vaksinkuy.epizy.com/",
+    visitLink: "//vaksinkuy.epizy.com/",
     imgSource: vaksinkuy,
     desc: "VaksinKuy is a website platform that provides informations, register, and sharing informations vaccination.",
     tags: ["HTML", "CSS", "Javascript", "PHP"],
