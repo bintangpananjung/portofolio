@@ -9,9 +9,9 @@ const HomeCard = () => {
           Hi, I'm Bintang
         </p>
         <p className="mt-2 sm:text-left xs:text-center">
-          A passionate Informatics Engineering student at Bandung Institute of
-          Technology with concern finding new experiences and knowledges
-          especially in fullstack development.
+          a fresh graduate in Informatics Engineering from ITB (Bandung
+          Institute of Technology) with a strong enthusiasm for gaining
+          experience, particularly in the role of a fullstack engineer.
         </p>
       </div>
       <div className="w-full justify-around xs:hidden xl:flex">
